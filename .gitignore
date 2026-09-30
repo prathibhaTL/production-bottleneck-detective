@@ -1,0 +1,49 @@
+# Secrets & local config
+backend/src/main/resources/application.properties
+
+# Frontend env files
+frontend/.env
+frontend/.env.local
+
+# Java build output
+target/
+*.class
+*.jar
+*.war
+*.log
+
+# Node / Frontend
+node_modules/
+frontend/node_modules/
+frontend/dist/
+frontend/build/
+npm-debug.log*
+
+# IDEs
+.idea/
+*.iml
+.classpath
+.project
+.settings/
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temp debug files
+boot2.txt
+boot_out.txt
+fix_pwd.sql
+init80_err.txt
+init_reset.sql
+minimal.ini
+mysqld_err.txt
+mysqld_out.txt
+reset_mysql_password.ps1
+reset_pwd.sql
+run_reset.bat
+start_all.ps1
+start_safe.bat
+stop_all.ps1
