@@ -1,0 +1,26 @@
+# =============================================
+# Production Bottleneck Detective - Backend
+# =============================================
+# Copy this file to application.properties and fill in your values.
+# Never commit application.properties with real credentials to Git.
+
+# --- Database ---
+spring.datasource.url=jdbc:mysql://localhost:3306/bottleneck_db?createDatabaseIfNotExist=true&useSSL=false&serverTimezone=UTC
+spring.datasource.username=YOUR_DB_USERNAME
+spring.datasource.password=YOUR_DB_PASSWORD
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+
+# --- JPA / Hibernate ---
+# update  = Hibernate updates the schema automatically (good for development)
+# validate = only validates the schema (use for production)
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+spring.jpa.properties.hibernate.format_sql=true
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQLDialect
+
+# --- Server ---
+server.port=8080
+
+# --- Logging ---
+logging.level.com.bottleneck=DEBUG
+logging.level.org.hibernate.SQL=DEBUG
